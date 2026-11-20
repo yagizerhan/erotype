@@ -7,7 +7,7 @@ import trQuotes from "../../data/languages/tr/quotes.json";
 import enQuotes from "../../data/languages/en/quotes.json";
 
 const packs = {
-  tr: { words: trWords as string[], quotes: trQuotes, letters: /^[abcçdefgğhıijklmnoöprsştuüvyzâîû]+$/ },
+  tr: { words: trWords as string[], quotes: trQuotes, letters: /^[abcçdefgğhıijklmnoöprsştuüvyz]+$/ },
   en: { words: enWords as string[], quotes: enQuotes, letters: /^[a-z]+$/ }
 };
 
@@ -32,7 +32,7 @@ for (const [lang, p] of Object.entries(packs)) {
         expect(q.source.length).toBeGreaterThan(3);
         expect(q.license.length).toBeGreaterThan(3);
         expect(q.text).toBe(q.text.normalize("NFC"));
-        expect(q.text).not.toMatch(/\s{2}|[‘’“”…–—]/);
+        expect(q.text).not.toMatch(/\s{2}|[‘’“”…–—âîûÂÎÛ]/);
       }
     });
   });
