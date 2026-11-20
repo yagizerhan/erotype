@@ -1,6 +1,8 @@
 <div align="center">
 
-<img src="public/favicon.svg" alt="EroType logo" width="112" height="112" />
+<a href="https://erotype.erotype.workers.dev">
+  <img src="public/favicon.svg" alt="EroType logo" width="112" height="112" />
+</a>
 
 # EroType
 
@@ -9,6 +11,7 @@
 Share a link, race your friends, track your personal bests. Turkish and English, out of the box.
 
 <p>
+  <a href="https://erotype.erotype.workers.dev"><img alt="Live Demo" src="https://img.shields.io/badge/play-erotype.workers.dev-ff5a1f?style=flat-square" /></a>
   <a href="LICENSE"><img alt="License: AGPL-3.0" src="https://img.shields.io/badge/license-AGPL--3.0-ff5a1f?style=flat-square" /></a>
   <img alt="TypeScript" src="https://img.shields.io/badge/TypeScript-5-3178c6?style=flat-square&logo=typescript&logoColor=white" />
   <img alt="React" src="https://img.shields.io/badge/React-19-61dafb?style=flat-square&logo=react&logoColor=black" />
