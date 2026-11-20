@@ -1,0 +1,21 @@
+{
+  "code": "en",
+  "name": "English",
+  "englishName": "English",
+  "rtl": false,
+  "noSpaces": false,
+  "extraChars": "",
+  "sources": [
+    {
+      "file": "words-1k.json",
+      "source": "hermitdave/FrequencyWords, content/2018/en/en_50k.txt (OpenSubtitles 2018) - top 1000 suitable words; non-letters, names, profanity and subtitle fragments removed by hand",
+      "license": "CC-BY-SA-4.0",
+      "url": "https://github.com/hermitdave/FrequencyWords"
+    },
+    {
+      "file": "quotes.json",
+      "source": "en-0001..0004: original project texts; others: Project Gutenberg public-domain books (Austen, Conan Doyle, Carroll, Shelley). See each record's source field.",
+      "license": "CC0-1.0 / public-domain"
+    }
+  ]
+}

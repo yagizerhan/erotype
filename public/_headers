@@ -1,0 +1,8 @@
+# Security headers for static files (Workers Static Assets _headers file).
+# /api/* responses come from the Worker and are not affected by this file.
+# No CSP yet: it should be added after testing against inline styles and Google Fonts.
+/*
+  X-Frame-Options: DENY
+  X-Content-Type-Options: nosniff
+  Referrer-Policy: strict-origin-when-cross-origin
+  Permissions-Policy: camera=(), microphone=(), geolocation=()

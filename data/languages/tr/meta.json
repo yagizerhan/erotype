@@ -1,0 +1,21 @@
+{
+  "code": "tr",
+  "name": "Türkçe",
+  "englishName": "Turkish",
+  "rtl": false,
+  "noSpaces": false,
+  "extraChars": "çğıİöşüÇĞÖŞÜ",
+  "sources": [
+    {
+      "file": "words-1k.json",
+      "source": "hermitdave/FrequencyWords, content/2018/tr/tr_50k.txt (OpenSubtitles 2018) - ilk 1000 uygun kelime; harf dışı karakter, 2-12 harf dışı, özel isim, küfür, yazım hatası ve altyazı parçaları elle temizlendi, NFC",
+      "license": "CC-BY-SA-4.0",
+      "url": "https://github.com/hermitdave/FrequencyWords"
+    },
+    {
+      "file": "quotes.json",
+      "source": "tr-0001..0005: proje ekibinin özgün metinleri; diğerleri: Ömer Seyfettin (ö. 1920) hikâyeleri, Vikikaynak (tr.wikisource.org). Her kaydın source alanında eser adı yazılıdır.",
+      "license": "CC0-1.0 / public-domain-tr (FSEK md. 27)"
+    }
+  ]
+}

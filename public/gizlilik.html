@@ -1,0 +1,119 @@
+<!doctype html>
+<!-- SPDX-License-Identifier: AGPL-3.0-or-later -->
+<!-- Statik sayfa: JS gerektirmez, Google OAuth onay ekranındaki "privacy policy" bağlantısı burayı gösterir. -->
+<html lang="tr">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Gizlilik Politikası — EroType</title>
+<meta name="description" content="EroType gizlilik politikası ve KVKK aydınlatma metni." />
+<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+<style>
+  :root { --bg:#121010; --fg:#e8e2dc; --muted:#9a918a; --accent:#e2b714; --line:#2a2522; }
+  @media (prefers-color-scheme: light) {
+    :root { --bg:#f7f4f0; --fg:#221e1b; --muted:#6b625b; --accent:#9a7a00; --line:#ddd5cc; }
+  }
+  * { box-sizing: border-box; }
+  body { margin:0; background:var(--bg); color:var(--fg);
+    font: 16px/1.65 system-ui, -apple-system, "Segoe UI", Roboto, sans-serif; }
+  main { max-width: 760px; margin: 0 auto; padding: 32px 16px 64px; }
+  a { color: var(--accent); }
+  h1 { font-size: 1.7rem; margin: .2em 0 .1em; }
+  h2 { font-size: 1.15rem; margin: 2em 0 .4em; padding-top: 1em; border-top: 1px solid var(--line); }
+  .muted { color: var(--muted); font-size: .92rem; }
+  table { width:100%; border-collapse: collapse; font-size: .93rem; }
+  th, td { text-align:left; vertical-align: top; padding: 8px 6px; border-bottom: 1px solid var(--line); }
+  .wrap { overflow-x: auto; }
+  nav { display:flex; gap:16px; flex-wrap: wrap; font-size:.95rem; }
+</style>
+</head>
+<body>
+<main>
+<nav><a href="/">← EroType</a><a href="#en">English</a></nav>
+
+<h1>Gizlilik Politikası ve KVKK Aydınlatma Metni</h1>
+<p class="muted">Son güncelleme: 5 Kasım 2026</p>
+
+<p>EroType, açık kaynaklı (AGPL-3.0) bir klavye hız testi ve çok oyunculu yarış sitesidir. Bu metin,
+6698 sayılı Kişisel Verilerin Korunması Kanunu (KVKK) ve GDPR kapsamında hangi verileri neden işlediğimizi açıklar.</p>
+
+<h2>1. Veri sorumlusu</h2>
+<p>EroType'ı geliştiren öğrenci ekibi. İletişim: <a href="mailto:alacakara.com@gmail.com">alacakara.com@gmail.com</a></p>
+
+<h2>2. Hangi verileri işliyoruz?</h2>
+<div class="wrap"><table>
+<tr><th>Veri</th><th>Ne zaman</th><th>Amaç</th></tr>
+<tr><td>Ad, e-posta adresi, profil fotoğrafı bağlantısı</td><td>Google veya GitHub ile giriş yaptığınızda, bu sağlayıcıdan</td><td>Hesabınızı oluşturmak ve tanımak</td></tr>
+<tr><td>Sağlayıcı hesap kimliği ve erişim anahtarı (token)</td><td>Giriş sırasında</td><td>Giriş işleminin teknik olarak tamamlanması</td></tr>
+<tr><td>Kullanıcı adı, isteğe bağlı biyografi ve yüklediğiniz profil fotoğrafı</td><td>Profilinizi düzenlediğinizde</td><td>Herkese açık profil ve skor tablosu</td></tr>
+<tr><td>Test sonuçları (hız, doğruluk, tutarlılık, süre, mod, dil)</td><td>Giriş yapmışken test bitirdiğinizde</td><td>Kişisel rekorlar, geçmiş ve skor tablosu</td></tr>
+<tr><td>Oturum bilgisi: IP adresi ve tarayıcı bilgisi (user-agent)</td><td>Giriş yaptığınızda</td><td>Oturum güvenliği ve kötüye kullanımın önlenmesi</td></tr>
+<tr><td>IP adresi (saklanmaz)</td><td>Her istekte, anlık</td><td>İstek sınırlama (spam ve kaba kuvvet saldırılarına karşı)</td></tr>
+<tr><td>Yarış odasındaki takma ad ve ilerleme</td><td>Bir yarış odasına katıldığınızda</td><td>Yarışın yürütülmesi; oda kapanınca silinir</td></tr>
+</table></div>
+<p>Şifre toplamıyoruz; giriş yalnızca Google veya GitHub üzerinden yapılır. Google hesabınızdan yalnızca temel
+profil bilgisi (ad, e-posta, fotoğraf) istenir; Gmail, Drive veya kişileriniz gibi verilere erişilmez.</p>
+
+<h2>3. Hukuki sebep</h2>
+<p>Veriler, üye olarak talep ettiğiniz hizmetin sunulması (KVKK m.5/2-c, sözleşmenin ifası) ve sistemin
+güvenliğinin sağlanması (KVKK m.5/2-f, meşru menfaat) amaçlarıyla işlenir. Reklam, profilleme veya
+satış amacıyla kullanılmaz ve kimseyle paylaşılmaz.</p>
+
+<h2>4. Çerezler ve tarayıcı depolaması</h2>
+<ul>
+<li>Yalnızca oturumunuzu açık tutan zorunlu bir çerez kullanılır. Reklam veya takip çerezi yoktur, analiz aracı yoktur.</li>
+<li>Tema, ses, dil tercihleri ve giriş yapmadan yaptığınız testler yalnızca kendi tarayıcınızda (<code>localStorage</code>)
+tutulur, sunucuya gönderilmez.</li>
+</ul>
+
+<h2>5. Hizmet sağlayıcılar ve yurt dışına aktarım</h2>
+<p>Site <strong>Cloudflare</strong> (barındırma, veritabanı) üzerinde çalışır; veriler Cloudflare'in yurt dışındaki
+sunucularında saklanabilir. Giriş için <strong>Google</strong> ve <strong>GitHub</strong> kullanılır. Yazı tipleri
+<strong>Google Fonts</strong> üzerinden yüklenir; bu sırada tarayıcınız Google'a IP adresinizi iletir. Bu sağlayıcılar
+kendi gizlilik politikalarına tabidir. Yurt dışına aktarım, açık rızanıza (giriş yaparak hizmeti kullanmanız) ve
+KVKK m.9'a dayanır.</p>
+
+<h2>6. Saklama süresi</h2>
+<p>Hesap ve test verileri hesabınız silinene kadar saklanır. Oturum kayıtları oturum sona erdiğinde geçerliliğini
+yitirir. Yarış odası verileri oda kapandığında silinir.</p>
+
+<h2>7. Haklarınız ve hesap silme</h2>
+<p>KVKK m.11 kapsamında verilerinizin işlenip işlenmediğini öğrenme, bilgi isteme, düzeltme, silinmesini isteme
+ve itiraz etme haklarına sahipsiniz. Hesabınızı ve tüm skorlarınızı dilediğiniz an kendiniz silebilirsiniz:
+<strong>profil → profili düzenle → hesabı sil</strong>. Silme anında ve kalıcıdır. Diğer talepleriniz için yukarıdaki
+e-posta adresine yazabilirsiniz; talepler en geç 30 gün içinde yanıtlanır.
+Google hesabınızın EroType erişimini dilediğiniz zaman
+<a href="https://myaccount.google.com/permissions" rel="noopener">Google hesap izinleri</a> sayfasından,
+GitHub erişimini <a href="https://github.com/settings/applications" rel="noopener">GitHub uygulama ayarları</a>
+sayfasından kaldırabilirsiniz.</p>
+
+<h2>8. Çocuklar</h2>
+<p>Hesap oluşturmak için 13 yaşından büyük olmanız gerekir. Giriş yapmadan siteyi herkes kullanabilir.</p>
+
+<h2>9. Değişiklikler</h2>
+<p>Bu metin değişirse güncel hali bu sayfada yayınlanır ve üstteki tarih güncellenir. Kaynak kod ve değişiklik
+geçmişi <a href="https://github.com/yagizerhan/erotype" rel="noopener">GitHub</a>'da herkese açıktır.</p>
+
+<h2 id="en">Privacy Policy (English summary)</h2>
+<p>EroType is an open-source (AGPL-3.0) typing test run by a small student team. Contact:
+<a href="mailto:alacakara.com@gmail.com">alacakara.com@gmail.com</a>.</p>
+<ul>
+<li><strong>What we collect:</strong> when you sign in with Google or GitHub we receive your name, email address and
+profile picture URL (basic profile scopes only, no access to Gmail, Drive or contacts). We store the username, bio and
+avatar you set, your completed test results, and session data (IP address and user-agent) for security. IP addresses are
+also used transiently for rate limiting. Room nicknames and progress exist only while a race room is open.</li>
+<li><strong>Why:</strong> to provide your account, personal bests and leaderboards, and to protect the service. We do not
+sell or share your data, show ads, or use tracking or analytics cookies. Only an essential session cookie is used.</li>
+<li><strong>Local data:</strong> preferences and guest results stay in your browser's localStorage.</li>
+<li><strong>Processors:</strong> Cloudflare (hosting, database), Google and GitHub (sign-in), Google Fonts (font
+delivery, receives your IP).</li>
+<li><strong>Retention and deletion:</strong> data is kept until you delete your account. You can delete your account and all
+results yourself at any time (profile → edit profile → delete account); deletion is immediate and permanent. Other
+requests are answered by email within 30 days. You can revoke access at
+<a href="https://myaccount.google.com/permissions" rel="noopener">Google permissions</a> or
+<a href="https://github.com/settings/applications" rel="noopener">GitHub applications</a>.</li>
+<li>You must be at least 13 to create an account.</li>
+</ul>
+</main>
+</body>
+</html>

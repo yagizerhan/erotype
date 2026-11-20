@@ -1,0 +1,24 @@
+# Local development secrets. Copy this file to `.dev.vars`.
+# `.dev.vars` is git-ignored (see `.gitignore`).
+
+# REQUIRED IN PRODUCTION: both keys must be at least 32 characters long,
+# otherwise the Worker returns a missing-configuration error (src/server/config.ts).
+# On localhost, dev defaults are used when left empty.
+# Generate with: node -e "console.log(crypto.randomBytes(32).toString('base64url'))"
+
+# Better Auth session signing key (long random string)
+BETTER_AUTH_SECRET=replace-me-with-at-least-32-char-random-string
+# HMAC key used to sign solo test tickets
+TEST_TICKET_SECRET=replace-me-with-another-random-string
+# Site origin (OAuth callback URLs are derived from this)
+BETTER_AUTH_URL=http://localhost:5173
+
+# GitHub OAuth App: https://github.com/settings/developers
+# Callback URL: http://localhost:5173/api/auth/callback/github
+GITHUB_CLIENT_ID=
+GITHUB_CLIENT_SECRET=
+
+# Google OAuth: https://console.cloud.google.com/apis/credentials
+# Authorized redirect URI: http://localhost:5173/api/auth/callback/google
+GOOGLE_CLIENT_ID=
+GOOGLE_CLIENT_SECRET=
